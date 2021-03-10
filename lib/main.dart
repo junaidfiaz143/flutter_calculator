@@ -74,261 +74,263 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Row(
-        children: <Widget>[
-          Container(
-            width: MediaQuery.of(context).size.width * 0.8,
-            child: Table(
-              children: [
-                TableRow(children: [
-                  Container(
-                    color: Color(0xFF66C2FF),
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("C pressed");
-                        },
-                        child: Text(
-                          "C",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  ),
-                  Container(
-                    color: Color(0xFF66C2FF),
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("CE pressed");
-                        },
-                        child: Text(
-                          "CE",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  ),
-                  Container(
-                    color: Color(0xFF66C2FF),
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("% pressed");
-                        },
-                        child: Text(
-                          "%",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  ),
-                ]),
-                TableRow(children: [
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("7 pressed");
-                        },
-                        child: Text("7")),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("8 pressed");
-                        },
-                        child: Text("8")),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("9 pressed");
-                        },
-                        child: Text("9")),
-                  ),
-                ]),
-                TableRow(children: [
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("4 pressed");
-                        },
-                        child: Text("4")),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("5 pressed");
-                        },
-                        child: Text("5")),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("6 pressed");
-                        },
-                        child: Text("6")),
-                  ),
-                ]),
-                TableRow(children: [
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("1 pressed");
-                        },
-                        child: Text("1")),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("2 pressed");
-                        },
-                        child: Text("2")),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("3 pressed");
-                        },
-                        child: Text("3")),
-                  ),
-                ]),
-                TableRow(children: [
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print(". pressed");
-                        },
-                        child: Text(".")),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("0 pressed");
-                        },
-                        child: Text("0")),
-                  ),
-                  Container(
-                    color: Colors.white,
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("= pressed");
-                        },
-                        child: Text(
-                          "=",
-                          style: TextStyle(color: Colors.black),
-                        )),
-                  ),
-                ]),
-              ],
+      body: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
+        Row(
+          children: <Widget>[
+            Container(
+              width: MediaQuery.of(context).size.width * 0.8,
+              child: Table(
+                children: [
+                  TableRow(children: [
+                    Container(
+                      color: Color(0xFF66C2FF),
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("C pressed");
+                          },
+                          child: Text(
+                            "C",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    ),
+                    Container(
+                      color: Color(0xFF66C2FF),
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("CE pressed");
+                          },
+                          child: Text(
+                            "CE",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    ),
+                    Container(
+                      color: Color(0xFF66C2FF),
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("% pressed");
+                          },
+                          child: Text(
+                            "%",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    ),
+                  ]),
+                  TableRow(children: [
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("7 pressed");
+                          },
+                          child: Text("7")),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("8 pressed");
+                          },
+                          child: Text("8")),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("9 pressed");
+                          },
+                          child: Text("9")),
+                    ),
+                  ]),
+                  TableRow(children: [
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("4 pressed");
+                          },
+                          child: Text("4")),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("5 pressed");
+                          },
+                          child: Text("5")),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("6 pressed");
+                          },
+                          child: Text("6")),
+                    ),
+                  ]),
+                  TableRow(children: [
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("1 pressed");
+                          },
+                          child: Text("1")),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("2 pressed");
+                          },
+                          child: Text("2")),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("3 pressed");
+                          },
+                          child: Text("3")),
+                    ),
+                  ]),
+                  TableRow(children: [
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print(". pressed");
+                          },
+                          child: Text(".")),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("0 pressed");
+                          },
+                          child: Text("0")),
+                    ),
+                    Container(
+                      color: Colors.white,
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("= pressed");
+                          },
+                          child: Text(
+                            "=",
+                            style: TextStyle(color: Colors.black),
+                          )),
+                    ),
+                  ]),
+                ],
+              ),
             ),
-          ),
-          Container(
-            width: MediaQuery.of(context).size.width * 0.2,
-            child: Table(
-              children: [
-                TableRow(children: [
-                  Container(
-                    color: Color(0xFF0099FF),
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("/ pressed");
-                        },
-                        child: Text(
-                          "/",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  )
-                ]),
-                TableRow(children: [
-                  Container(
-                    color: Color(0xFF0099FF),
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("X pressed");
-                        },
-                        child: Text(
-                          "X",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  )
-                ]),
-                TableRow(children: [
-                  Container(
-                    color: Color(0xFF0099FF),
-                    width: 50.0,
-                    height: 50.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("- pressed");
-                        },
-                        child: Text(
-                          "-",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  )
-                ]),
-                TableRow(children: [
-                  Container(
-                    color: Color(0xFF0099FF),
-                    width: 50.0,
-                    height: 100.0,
-                    child: TextButton(
-                        onPressed: () {
-                          print("+ pressed");
-                        },
-                        child: Text(
-                          "+",
-                          style: TextStyle(color: Colors.white),
-                        )),
-                  )
-                ]),
-              ],
+            Container(
+              width: MediaQuery.of(context).size.width * 0.2,
+              child: Table(
+                children: [
+                  TableRow(children: [
+                    Container(
+                      color: Color(0xFF0099FF),
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("/ pressed");
+                          },
+                          child: Text(
+                            "/",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    )
+                  ]),
+                  TableRow(children: [
+                    Container(
+                      color: Color(0xFF0099FF),
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("X pressed");
+                          },
+                          child: Text(
+                            "X",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    )
+                  ]),
+                  TableRow(children: [
+                    Container(
+                      color: Color(0xFF0099FF),
+                      width: 50.0,
+                      height: 50.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("- pressed");
+                          },
+                          child: Text(
+                            "-",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    )
+                  ]),
+                  TableRow(children: [
+                    Container(
+                      color: Color(0xFF0099FF),
+                      width: 50.0,
+                      height: 100.0,
+                      child: TextButton(
+                          onPressed: () {
+                            print("+ pressed");
+                          },
+                          child: Text(
+                            "+",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                    )
+                  ]),
+                ],
+              ),
             ),
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+          ],
+        )
+      ]),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: _incrementCounter,
+      //   tooltip: 'Increment',
+      //   child: Icon(Icons.add),
+      // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
